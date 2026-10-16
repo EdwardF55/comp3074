@@ -94,7 +94,7 @@ fun CourseScreen(modifier: Modifier) {
             val newCourse = Course(
                 code = "COMP${numCourses + 1000}",
                 name = "Course ${numCourses+1}"
-            )
+            )// Button unclickable. May be due to emulator lag.
             courses.add(0,newCourse)
         },
             modifier=modifier.fillMaxWidth().padding(16.dp)){
